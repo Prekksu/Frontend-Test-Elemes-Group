@@ -2,7 +2,7 @@ import React from "react";
 
 const Category = () => {
 	return (
-		<>
+		<div className="flex justify-center items-center">
 			<div className="w-[1440px] h-[573px] relative">
 				<div className="w-[1440px] h-[573px] left-0 top-0 absolute bg-white" />
 				<div className="w-[1333px] h-[215px] p-2.5 left-[107px] top-[197px] absolute justify-start items-start gap-2.5 inline-flex">
@@ -86,7 +86,7 @@ const Category = () => {
 					</span>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

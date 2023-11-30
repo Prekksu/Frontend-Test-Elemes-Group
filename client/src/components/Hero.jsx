@@ -3,8 +3,8 @@ import HeroPic from "./HeroPic";
 
 const Hero = () => {
 	return (
-		<div className="w-[1440px] h-[653px] relative mx-auto flex items-center justify-around">
-			<div className="w-[482px] h-[286.92px] flex-col gap-8 inline-flex">
+		<div className="w-[1440px] h-[653px] relative mx-auto flex items-center justify-between">
+			<div className="w-[482px] h-[286.92px] ml-[116px] flex-col gap-8 inline-flex">
 				<div className="self-stretch text-lime-500 text-[64px] font-medium font-['Rubik'] leading-[64px]">
 					Good Food Us Good Mood
 				</div>

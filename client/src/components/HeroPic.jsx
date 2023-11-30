@@ -6,9 +6,8 @@ import star from "../assets/favorite 5.svg";
 
 const HeroPic = () => {
 	return (
-		<div className="w-[651px] h-[653px] relative">
+		<div className="w-[651px] h-[653px] mr-[116px] relative">
 			<div className="w-[480px] h-[530.88px] left-[109px] top-[66px] absolute">
-				<div className="w-[480px] h-[530.88px] left-0 top-0 absolute" />
 				<img
 					className="w-[412.90px] h-[414.75px] left-[11.98px] top-[49.77px] absolute"
 					src={food}

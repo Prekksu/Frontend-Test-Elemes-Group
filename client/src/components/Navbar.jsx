@@ -3,7 +3,7 @@ import logo from "../assets/elemes logo.png";
 
 const Navbar = () => {
 	return (
-		<div className="w-[1440px] h-24 relative mx-auto flex items-center justify-between">
+		<div className="w-[1440px] h-24 fixed top-0 left-0 right-0 mx-auto flex items-center justify-between bg-white z-50">
 			<div className="left-[518.50px] top-[37px] absolute justify-end items-center gap-8 inline-flex">
 				<div className="justify-start items-center flex">
 					<div className="text-neutral-500 text-sm font-medium font-['Rubik'] leading-snug">
