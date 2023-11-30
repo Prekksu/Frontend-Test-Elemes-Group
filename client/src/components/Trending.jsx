@@ -9,6 +9,7 @@ import product7 from "../assets/product/pexels-karley-saagi-2064449 1.png";
 import product8 from "../assets/product/pexels-polina-tankilevitch-6419736 1.png";
 import ratefill from "../assets/favorite 4.svg";
 import rate from "../assets/favorite 5.svg";
+import bg from "../assets/115.png";
 
 const Trending = () => {
 	const products = [
@@ -62,17 +63,6 @@ const Trending = () => {
 		},
 	];
 
-	const ratings = {
-		"Pizza Paperoni": 4,
-		"Pizza Meat": 4,
-		"Doner Kebab": 5,
-		"Salmon Roll": 4,
-		"Cupcake Choco": 4,
-		"Doughnut Milk": 5,
-		"Doughnut Unicorn": 4,
-		"Kathi Kebab": 4,
-	};
-
 	return (
 		<div className="w-[1440px] relative mx-auto flex flex-col gap-16">
 			<div className="w-[730px] left-[518.50px] ml-[116px]">
@@ -107,22 +97,27 @@ const Trending = () => {
 							</div>
 							<div>
 								<img
+									alt="rate"
 									src={ratefill}
 									className="w-[10.50px] h-[10.66px] left-[25px] top-[272px] absolute flex-col justify-start items-start inline-flex"
 								/>
 								<img
+									alt="rate"
 									src={ratefill}
 									className="w-[10.50px] h-[10.66px] left-[40px] top-[272px] absolute flex-col justify-start items-start inline-flex"
 								/>
 								<img
+									alt="rate"
 									src={ratefill}
 									className="w-[10.50px] h-[10.66px] left-[55px] top-[272px] absolute flex-col justify-start items-start inline-flex"
 								/>
 								<img
+									alt="rate"
 									src={ratefill}
 									className="w-[10.50px] h-[10.66px] left-[70px] top-[272px] absolute flex-col justify-start items-start inline-flex"
 								/>
 								<img
+									alt="rate"
 									src={rate}
 									className="w-[10.50px] h-[10.66px] left-[85px] top-[272px] absolute flex-col justify-start items-start inline-flex"
 								/>

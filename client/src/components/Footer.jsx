@@ -1,8 +1,11 @@
 import React from "react";
+import logo from "../assets/elemes logo.png";
+import { MdOutlineEmail } from "react-icons/md";
+import { BsTelephone, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
 	return (
-		<div className="flex justify-center items-center">
+		<div className="flex justify-center items-center pt-44">
 			<div className="w-[1239px] h-[423px] relative">
 				<div className="left-[469px] top-[407px] absolute text-neutral-500 text-xs font-normal font-['Rubik'] uppercase leading-none tracking-wide">
 					© 2021 Elemes id. All rights reserved
@@ -57,23 +60,20 @@ const Footer = () => {
 					</div>
 					<div className="w-[136px] h-10 left-[62px] top-[239px] absolute flex-col justify-start items-start gap-8 inline-flex">
 						<div className="justify-start items-start gap-2 inline-flex">
-							<div className="p-2.5 bg-lime-500 rounded-3xl justify-start items-start gap-2.5 flex">
-								<div className="w-5 h-5 relative" />
+							<div className="p-2.5 bg-white hover:bg-lime-500 rounded-3xl justify-start items-start gap-2.5 flex">
+								<MdOutlineEmail className="w-5 h-5  text-lime-500 hover:text-white" />
 							</div>
-							<div className="p-2.5 bg-white rounded-3xl justify-start items-start gap-2.5 flex">
-								<div className="w-5 h-5 relative" />
+							<div className="p-2.5 bg-white hover:bg-lime-500 rounded-3xl justify-start items-start gap-2.5 flex">
+								<BsTelephone className="w-5 h-5  text-lime-500 hover:text-white" />
 							</div>
-							<div className="p-2.5 bg-white rounded-3xl justify-start items-start gap-2.5 flex">
-								<div className="w-5 h-5 relative" />
+							<div className="p-2.5 bg-white hover:bg-lime-500 rounded-3xl justify-start items-start gap-2.5 flex">
+								<BsInstagram className="w-5 h-5 text-lime-500 hover:text-white" />
 							</div>
 						</div>
 					</div>
 					<div className="w-[335px] h-[127px] left-[62px] top-[79px] absolute flex-col justify-start items-start gap-4 inline-flex">
 						<div className="pb-[5.70px] justify-end items-center inline-flex">
-							<img
-								className="w-[207px] h-[50px]"
-								src="https://via.placeholder.com/207x50"
-							/>
+							<img alt="logo" className="w-[207px] h-[50px]" src={logo} />
 						</div>
 						<div className="text-neutral-500 text-sm font-normal font-['Rubik'] leading-tight">
 							Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, <br />
@@ -81,10 +81,11 @@ const Footer = () => {
 							Daerah Khusus Ibukota Jakarta 12950
 						</div>
 					</div>
-					<div className="w-[250px] h-10 left-[922px] top-[202px] absolute rounded-lg border border-black" />
-					<div className="w-32 h-7 left-[937px] top-[210px] absolute text-black text-sm font-normal font-['Rubik'] leading-normal">
-						Your email address
-					</div>
+
+					<input
+						type="text"
+						className="w-[250px] h-10 left-[922px] top-[202px] absolute border border-gray-500 rounded-lg"
+					/>
 					<div className="w-[177px] h-6 left-[921px] top-[261px] absolute">
 						<div className="w-5 h-5 left-0 top-[2px] absolute flex-col justify-start items-start inline-flex" />
 						<div className="w-[157px] h-6 left-[20px] top-0 absolute text-black text-sm font-normal font-['Rubik'] leading-normal">
@@ -101,10 +102,12 @@ const Footer = () => {
 							0888 1111 2222{" "}
 						</div>
 					</div>
-					<div className="w-[60px] h-10 left-[1112px] top-[202px] absolute bg-lime-500 rounded-tr-lg rounded-br-lg" />
-					<div className="w-[41px] h-[23px] left-[1123px] top-[210px] absolute text-white text-sm font-medium font-['Rubik'] leading-normal">
-						SEND
-					</div>
+					<button>
+						<div className="w-[60px] h-10 left-[1112px] top-[202px] absolute bg-lime-500 rounded-tr-lg rounded-br-lg" />
+						<div className="w-[41px] h-[23px] left-[1123px] top-[210px] absolute text-white text-sm font-medium font-['Rubik'] leading-normal">
+							SEND
+						</div>
+					</button>
 				</div>
 			</div>
 		</div>
