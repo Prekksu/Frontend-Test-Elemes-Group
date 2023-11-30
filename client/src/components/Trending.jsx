@@ -79,48 +79,61 @@ const Trending = () => {
 						<div
 							key={index}
 							className="w-[287.50px] h-[306px] relative rounded-[17px] shadow"
-							style={{ backgroundColor: val.bgColor }}
+							style={{
+								backgroundImage: `url(${bg})`,
+								backgroundSize: "cover",
+								position: "relative",
+							}}
 						>
-							<div className="w-[287.50px] h-[306px] left-0 top-0 absolute " />
-							<div className="w-[118.15px] h-[120px] left-[20.68px] top-[33px] absolute">
-								<img
-									src={val.photo}
-									alt="trending"
-									className="w-[118.15px] h-[120px] left-0 top-0 absolute bg-stone-300 rounded-md"
-								/>
-							</div>
-							<div className="w-[205px] left-[25px] top-[172px] absolute text-black text-[26px] font-medium font-['Rubik'] leading-[50px]">
-								{val.name}
-							</div>
-							<div className="w-[46.28px] left-[24.61px] top-[222px] absolute text-lime-500 text-lg font-medium font-['Rubik']">
-								{val.category}
-							</div>
-							<div>
-								<img
-									alt="rate"
-									src={ratefill}
-									className="w-[10.50px] h-[10.66px] left-[25px] top-[272px] absolute flex-col justify-start items-start inline-flex"
-								/>
-								<img
-									alt="rate"
-									src={ratefill}
-									className="w-[10.50px] h-[10.66px] left-[40px] top-[272px] absolute flex-col justify-start items-start inline-flex"
-								/>
-								<img
-									alt="rate"
-									src={ratefill}
-									className="w-[10.50px] h-[10.66px] left-[55px] top-[272px] absolute flex-col justify-start items-start inline-flex"
-								/>
-								<img
-									alt="rate"
-									src={ratefill}
-									className="w-[10.50px] h-[10.66px] left-[70px] top-[272px] absolute flex-col justify-start items-start inline-flex"
-								/>
-								<img
-									alt="rate"
-									src={rate}
-									className="w-[10.50px] h-[10.66px] left-[85px] top-[272px] absolute flex-col justify-start items-start inline-flex"
-								/>
+							<div
+								key={index}
+								className="w-[287.50px] h-[306px] relative rounded-[17px] shadow hover:opacity-90"
+								style={{
+									backgroundColor: val.bgColor,
+									position: "relative",
+									zIndex: 1,
+								}}
+							>
+								<div className="w-[118.15px] h-[120px] left-[20.68px] top-[33px] absolute">
+									<img
+										src={val.photo}
+										alt="trending"
+										className="w-[118.15px] h-[120px] left-0 top-0 absolute bg-stone-300 rounded-md"
+									/>
+								</div>
+								<div className="w-[205px] left-[25px] top-[172px] absolute text-black text-[26px] font-medium font-['Rubik'] leading-[50px]">
+									{val.name}
+								</div>
+								<div className="w-[46.28px] left-[24.61px] top-[222px] absolute text-lime-500 text-lg font-medium font-['Rubik']">
+									{val.category}
+								</div>
+								<div>
+									<img
+										alt="rate"
+										src={ratefill}
+										className="w-[10.50px] h-[10.66px] left-[25px] top-[272px] absolute flex-col justify-start items-start inline-flex"
+									/>
+									<img
+										alt="rate"
+										src={ratefill}
+										className="w-[10.50px] h-[10.66px] left-[40px] top-[272px] absolute flex-col justify-start items-start inline-flex"
+									/>
+									<img
+										alt="rate"
+										src={ratefill}
+										className="w-[10.50px] h-[10.66px] left-[55px] top-[272px] absolute flex-col justify-start items-start inline-flex"
+									/>
+									<img
+										alt="rate"
+										src={ratefill}
+										className="w-[10.50px] h-[10.66px] left-[70px] top-[272px] absolute flex-col justify-start items-start inline-flex"
+									/>
+									<img
+										alt="rate"
+										src={rate}
+										className="w-[10.50px] h-[10.66px] left-[85px] top-[272px] absolute flex-col justify-start items-start inline-flex"
+									/>
+								</div>
 							</div>
 						</div>
 					);

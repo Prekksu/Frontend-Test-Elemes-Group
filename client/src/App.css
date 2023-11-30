@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* MobileCategory.css */
+
+/* For WebKit browsers like Chrome and Safari */
+.mobile-category-container::-webkit-scrollbar {
+	width: 12px;
+}
+
+.mobile-category-container::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+/* For Firefox */
+.mobile-category-container {
+	scrollbar-color: transparent transparent;
+}
+
+.mobile-category-container:hover::-webkit-scrollbar-thumb {
+	background-color: transparent; /* Set a color when hovering over the scrollbar */
+}
+
+/* Additional styling for the container if needed */
+.mobile-category-container {
+	overflow-x: auto;
+	border: transparent; /* Add a border for a visual indicator of the scrollable area */
 }

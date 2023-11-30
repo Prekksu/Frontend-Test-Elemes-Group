@@ -52,22 +52,31 @@ const Category = () => {
 								key={index}
 								className="w-[243px] h-[172px] px-[81px] py-[30px] rounded-lg justify-center items-center flex transition-transform transform hover:scale-125 hover:z-50"
 								style={{
-									backgroundColor: val.bgColor,
-									// backgroundImage: `url(${bg})`,
+									backgroundImage: `url(${bg})`,
 									backgroundSize: "cover",
+									position: "relative",
 								}}
 							>
-								<div className="w-[81px] h-28 relative">
-									<img
-										alt="cat"
-										src={val.photo}
-										className="w-[51.84px] h-[47px] left-[11.03px] top-0 absolute"
-									/>
-									<div className="w-[81px] left-0 top-[70px] absolute text-center text-zinc-800 text-base font-medium font-['Rubik'] leading-snug">
-										{val.category}
-									</div>
-									<div className="w-[63.81px] left-[5.60px] top-[96px] absolute text-center text-zinc-800 text-sm font-normal font-['Rubik'] leading-none">
-										{val.items} Items
+								<div
+									className="w-[243px] h-[172px] px-[81px] py-[30px] rounded-lg justify-center items-center flex hover:opacity-90"
+									style={{
+										backgroundColor: val.bgColor,
+										position: "relative",
+										zIndex: 1,
+									}}
+								>
+									<div className="w-[81px] h-28 relative">
+										<img
+											alt="cat"
+											src={val.photo}
+											className="w-[51.84px] h-[47px] left-[11.03px] top-0 absolute"
+										/>
+										<div className="w-[81px] left-0 top-[70px] absolute text-center text-zinc-800 text-base font-medium font-['Rubik'] leading-snug">
+											{val.category}
+										</div>
+										<div className="w-[63.81px] left-[5.60px] top-[96px] absolute text-center text-zinc-800 text-sm font-normal font-['Rubik'] leading-none">
+											{val.items} Items
+										</div>
 									</div>
 								</div>
 							</div>
